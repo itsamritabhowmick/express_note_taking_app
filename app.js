@@ -9,7 +9,9 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 const idx = require("./routes/index");
+const del = require("./routes/delete");
 app.use("/", idx);
+app.use("/delete", del);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
