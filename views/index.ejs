@@ -46,6 +46,7 @@
               <th scope="col">#</th>
               <th scope="col">Note Heading</th>
               <th scope="col">Descripton</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -54,6 +55,14 @@
               <th scope="row"><%= pos+1%></th>
               <td><%= val.nhead%></td>
               <td><%= val.ndesc%></td>
+              <td>
+                <a
+                  class="btn btn-danger"
+                  href="/delete/<%= val.id %>"
+                  role="button"
+                  >Delete</a
+                >
+              </td>
             </tr>
             <%})%>
           </tbody>
