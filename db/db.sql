@@ -7,3 +7,5 @@ CREATE TABLE note1(
 );
 
 SELECT * FROM note1;
+
+INSERT INTO note1 (nhead, ndesc) VALUES (?,?)
