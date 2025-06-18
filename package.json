@@ -1,0 +1,25 @@
+{
+  "name": "express_note_app",
+  "version": "1.0.0",
+  "description": "Making a notes app using Express.js",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsamritabhowmick/express_note_taking_app.git"
+  },
+  "author": "Amrita Bhowmick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsamritabhowmick/express_note_taking_app/issues"
+  },
+  "homepage": "https://github.com/itsamritabhowmick/express_note_taking_app#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10"
+  }
+}
