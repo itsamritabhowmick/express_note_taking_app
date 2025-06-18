@@ -2,7 +2,6 @@ const express = require("express");
 const route = express.Router();
 
 const pool = require("../db");
-
 route.use((req, res, next) => {
   console.log("Index middleware");
   next();
@@ -19,6 +18,7 @@ route.get("/", (req, res) => {
   });
 });
 
+// post route
 route.post("/", (req, res) => {
   const { nhead, ndesc } = req.body;
   console.log(req.body);
