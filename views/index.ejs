@@ -13,6 +13,26 @@
     <h1 class="text-center my-5">Note Taking app</h1>
     <main>
       <div class="container bg-light text-dark p-4" style="border-radius: 15px">
+        <h1 class="text-center my-1">Add your Notes Here</h1>
+        <!-- search box start -->
+        <form>
+          <div class="mb-3 d-flex justify-content-end">
+            <!-- <label for="srch" class="form-label"></label> -->
+            <form action="/search" method="get" class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search Here"
+                aria-label="Search"
+                name="srch"
+                style="width: 300px"
+              />
+
+              <button type="submit" class="btn btn-outline-success">Search</button>
+            </form>
+          </div>
+      <!-- search box end  -->
+
         <form method="post" action="/">
           <div class="mb-3">
             <label for="noteHead" class="form-label">Note Heading</label>
@@ -75,3 +95,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
